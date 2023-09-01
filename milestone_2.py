@@ -6,10 +6,11 @@ and the user tries to guess it.
 '''
 import random
 
+
 word_list = ['orange', 'banana', 'pear', 'cherry', 'blueberry']
 
-word = random.choice(word_list)
-
+for i in range(len(word_list)):
+    word = random.choice(word_list)
 
 user_input = input("Please enter a single letter..")
 if len(user_input) == 1 and user_input.isalpha():
@@ -20,4 +21,3 @@ else:
 
 print(word_list)
 print(word)
-# print(guess)
