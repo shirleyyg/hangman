@@ -41,7 +41,9 @@ If the letter passes both checks i.e. not a single alphabetical character and it
 The check_guess method has been updated to update the word_guessed list if the letter in the word matches with the letter the user has guessed.
 In the if statement of the method, a for loop has been used to checks if the letter is equal to the guessed letter. Then it replaces the corresponding "_" in the word_guessed with the guessed letter. Then it also decrements the num_letters value.
 
-In the else statement, the code has been updated to reduct the num_lives by 1 for every incorrect guess. Then it prints out the outstanding num_lives and also inform the user that the letter is not in the word.
+In the else statement, the code has been updated to reduces the num_lives by 1 for every incorrect guess. Then it prints out the outstanding num_lives and also inform the user that the letter is not in the word.
+
+Finally a function is created that will run all the code for the game as expected in file milestone_5.py so that this function can be called to play the game.
 
 ### Installation Instructions
 
