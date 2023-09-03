@@ -57,6 +57,9 @@ class Hangman:
 # print(player1.list_of_guesses)
 
 def play_game(word_list):
+    '''
+    This function will run all the code in the Hangman class and can be used to play the game
+    '''
     num_lives = 5
 
     game = Hangman(word_list, num_lives)
