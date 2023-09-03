@@ -15,13 +15,21 @@ Hangman is a classic game in which a player thinks of a word and the other playe
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 Instructions:
-Firstly, create the repo in Github and clone to local folder
+Firstly, we need to create a new repo fro the project in Github and clone it to local folder using git clone and repor url via Terminal
 
-Create the required variables:
-    1. Create a list
-    2. Add random choice method
-    3. Add user input and add checks
-    4. Push the latest change to Github
+Firstly we define the variables that are required for the hangman game. 
+Following are the required variables:
+1. word_list = A list of strings such as fruits
+2. word = selects a string from the list randomly
+3. guess = user input to guess a letter
+
+Then we create 2 functions:
+1. check_guess 
+This function checks whether the guessed letter is in the randomly selected word
+
+2. ask_for_input
+    1. This function uses while loop to iteratively check if the input is a valid guess and breask out of the loop if it passes the check i.e. if it is a single alphabetical character.
+    2. Then it calls the check_guess method to check if this letter is in the word
 
 ### Installation Instructions
 

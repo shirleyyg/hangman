@@ -1,23 +1,24 @@
-'''
-Hangman is a classic game in which a player thinks of a word 
-and the other player tries to guess that word within a certain amount of attempts. 
-This is an implementation of the Hangman game, where the computer thinks of a word 
-and the user tries to guess it.
-'''
 import random
 
-
 word_list = ['orange', 'banana', 'pear', 'cherry', 'blueberry']
+word = random.choice(word_list)
 
-for i in range(len(word_list)):
-    word = random.choice(word_list)
+def check_guess(guess):
+    # guess.lower() 
+    if guess.lower() in word:
+        print(f"Good guess! {guess} is in the word: {word}.")
+    else:
+        print(f"Sorry, {guess} is not in the word: {word}. Try again.")
 
-user_input = input("Please enter a single letter..")
-if len(user_input) == 1 and user_input.isalpha():
-    guess = user_input
-    print("Good guess!")
-else:
-    print("Oops! That is not a valid input.")
+def ask_for_input():
+    while True:
+        guess = input("Please enter a single letter..")
+        if len(guess) == 1 and guess.isalpha():
+            print(f"Good guess! You guessed letter {guess}")
+            break
+        else:
+            print("Invalid letter. Please, enter a single alphabetical character.")
 
-print(word_list)
-print(word)
+    check_guess(guess)
+
+player1 = ask_for_input()
