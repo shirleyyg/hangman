@@ -21,8 +21,7 @@ This is a console version of Hangman where the player must guess letters of a hi
 - **Language:** Python 3  
 - **Libraries:** Standard Library only (no external dependencies)  
 - **Files included:**  
-  - `hangman.py` – main game loop & logic  
-  - `wordlist.txt` (or similar) – list of possible words  
+  - `milestone_5.py` – main game loop & logic  
   - `README.md` – project documentation  
 
 ## Usage Instructions 
